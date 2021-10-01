@@ -1,0 +1,9 @@
+@import "_normalize.scss";
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+h1 {
+    font-family: 'Permanent Marker', cursive;
+}
+
+@import "_mobile.scss";
+@import "_midrange.scss";
+@import "_desktop.scss";

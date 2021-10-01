@@ -1,0 +1,45 @@
+$PrimaryColor: rgb(14, 220, 235);
+//Overlay Text Settings
+#louisville {
+    text-align: left;
+    padding-left: 1rem;
+}
+
+#stunt {
+    text-align: center;
+}
+
+#lot {
+    text-align: right;
+    padding-right: 5rem;
+}
+
+#textOverlay {
+    position: relative;
+    top: -35rem;
+}
+
+//Nav Styling
+nav {
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: relative;
+        top: -26rem;
+        li {
+            padding: 1rem;
+            background-color: $PrimaryColor;
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
+
+//Image Settings
+#mobileImage {
+    border-bottom: 1rem solid $PrimaryColor;
+}
