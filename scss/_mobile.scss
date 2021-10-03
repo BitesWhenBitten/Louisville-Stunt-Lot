@@ -6,40 +6,97 @@ $PrimaryColor: rgb(14, 220, 235);
 }
 
 #stunt {
-    text-align: center;
+    position: absolute;
+    left: 9rem;
 }
 
 #lot {
-    text-align: right;
-    padding-right: 5rem;
+    position: absolute;
+    left: 16rem;
+    top: 10rem;
 }
 
 #textOverlay {
-    position: relative;
-    top: -35rem;
+    position: absolute;
+    top: 2rem;
 }
 
 //Nav Styling
-nav {
-    ul {
+.bg-img {
+    background-image: url("../images/mobile/mobile.jpg");
+    min-height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: $PrimaryColor solid .5rem;
+}
+
+.container {
+    position: absolute;
+    margin: 20px;
+    width: auto;
+}
+
+//Actual link styling
+.sideNav {
+    position: absolute;
+    top: 24rem;
+    right: -24.5rem;
+    // overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+//THESE ARE REQUIRED OR TRANSIIONING BETWEEN LARGER PHONES
+// AND SMALLER PHONES WILL BE FUCKED UP!!!
+@media only screen and (max-width: 396px) {
+    .sideNav a {
         list-style: none;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        position: relative;
-        top: -26rem;
-        li {
-            padding: 1rem;
-            background-color: $PrimaryColor;
-            a {
-                text-decoration: none;
-                color: white;
-            }
-        }
+        padding: 1rem;
+        background-color: $PrimaryColor;
+        text-decoration: none;
+        color: white;
+        padding-right: 2rem;
+        margin-right: 2rem;
     }
+}
+
+@media only screen and (min-width: 397px) {
+    .sideNav a {
+        list-style: none;
+        padding: 1rem;
+        background-color: $PrimaryColor;
+        text-decoration: none;
+        color: white;
+        padding-right: 2rem;
+        margin-right: 0rem;
+    }
+}
+
+//Set the settings for the following Nav
+.stickyNav {
+    position: fixed;
+    top: 38rem;
+    display: flex;
+    width: 100%;
+    background-color: $PrimaryColor;
+}
+
+.stickyNav a {
+    list-style: none;
+    padding: 1rem;
+    background-color: $PrimaryColor;
+    text-decoration: none;
+    color: white;
+    padding-right: 1.75rem;
 }
 
 //Image Settings
 #mobileImage {
     border-bottom: 1rem solid $PrimaryColor;
+}
+
+//Main Content Settings
+main {
+    margin-top: 5rem;
 }
