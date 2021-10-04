@@ -1,67 +1,54 @@
-$PrimaryColor: rgb(14, 220, 235);
-//Overlay Text Settings
-#louisville {
-    text-align: left;
-    padding-left: 1rem;
-}
-
-#stunt {
-    position: absolute;
-    left: 9rem;
-}
-
-#lot {
-    position: absolute;
-    left: 16rem;
-    top: 10rem;
-}
-
-#textOverlay {
-    position: absolute;
-    top: 2rem;
-}
-
-//Nav Styling
-.bg-img {
-    background-image: url("../images/mobile/mobile.jpg");
-    min-height: 600px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: $PrimaryColor solid .5rem;
-}
-
-.container {
-    position: absolute;
-    margin: 20px;
-    width: auto;
-}
-
-//Actual link styling
-.sideNav {
-    position: absolute;
-    top: 24rem;
-    right: -24.5rem;
-    // overflow: hidden;
-    display: flex;
-    flex-direction: column;
-}
-
-//THESE ARE REQUIRED OR TRANSIIONING BETWEEN LARGER PHONES
-// AND SMALLER PHONES WILL BE FUCKED UP!!!
-@media only screen and (max-width: 396px) {
-    .sideNav a {
-        list-style: none;
-        padding: 1rem;
-        background-color: $PrimaryColor;
-        text-decoration: none;
-        color: white;
-        padding-right: 2rem;
-        margin-right: 2rem;
+    $PrimaryColor: rgb(14, 220, 235);
+    //Overlay Text Settings
+    #louisville {
+        text-align: left;
+        padding-left: 1rem;
     }
-}
-
-@media only screen and (min-width: 397px) {
+    
+    #stunt {
+        position: absolute;
+        left: 9rem;
+    }
+    
+    #lot {
+        position: absolute;
+        left: 16rem;
+        top: 10rem;
+    }
+    
+    #textOverlay {
+        position: absolute;
+        top: 2rem;
+    }
+    
+    //Nav Styling
+    .bg-img {
+        background-image: url("../images/mobile/mobile.jpg");
+        min-height: 600px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: $PrimaryColor solid .5rem;
+        position: relative;
+    }
+    
+    .container {
+        position: absolute;
+        margin: 20px;
+        width: auto;
+    }
+    
+    //Actual link structure
+    .sideNav {
+        position: fixed;
+        top: 25.5rem;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: $PrimaryColor;
+    }
+    
+    //Make the links pretty
     .sideNav a {
         list-style: none;
         padding: 1rem;
@@ -71,32 +58,31 @@ $PrimaryColor: rgb(14, 220, 235);
         padding-right: 2rem;
         margin-right: 0rem;
     }
-}
-
-//Set the settings for the following Nav
-.stickyNav {
-    position: fixed;
-    top: 38rem;
-    display: flex;
-    width: 100%;
-    background-color: $PrimaryColor;
-}
-
-.stickyNav a {
-    list-style: none;
-    padding: 1rem;
-    background-color: $PrimaryColor;
-    text-decoration: none;
-    color: white;
-    padding-right: 1.75rem;
-}
-
-//Image Settings
-#mobileImage {
-    border-bottom: 1rem solid $PrimaryColor;
-}
-
-//Main Content Settings
-main {
-    margin-top: 5rem;
-}
+    
+    //Set the settings for the following Nav
+    .stickyNav {
+        position: fixed;
+        top: 30rem;
+        display: flex;
+        width: 100%;
+        background-color: $PrimaryColor;
+    }
+    
+    .stickyNav a {
+        list-style: none;
+        padding: 1rem;
+        background-color: $PrimaryColor;
+        text-decoration: none;
+        color: white;
+        padding-right: 1.75rem;
+    }
+    
+    //Image Settings
+    #mobileImage {
+        border-bottom: 1rem solid $PrimaryColor;
+    }
+    
+    //Main Content Settings
+    main {
+        margin-top: 5rem;
+    }
