@@ -346,27 +346,6 @@ h1 {
   font-family: 'Permanent Marker', cursive;
 }
 
-#louisville {
-  text-align: left;
-  padding-left: 1rem;
-}
-
-#stunt {
-  position: absolute;
-  left: 9rem;
-}
-
-#lot {
-  position: absolute;
-  left: 16rem;
-  top: 10rem;
-}
-
-#textOverlay {
-  position: absolute;
-  top: 2rem;
-}
-
 .bg-img {
   background-image: url("../images/mobile/mobile.jpg");
   min-height: 600px;
@@ -378,12 +357,21 @@ h1 {
 }
 
 .container {
-  position: absolute;
-  margin: 20px;
-  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.sideNav {
+.container h1 {
+  padding: 1rem;
+}
+
+#yNav {
   position: fixed;
   top: 25.5rem;
   right: 0;
@@ -397,7 +385,7 @@ h1 {
   background-color: #0edceb;
 }
 
-.sideNav a {
+#yNav a {
   list-style: none;
   padding: 1rem;
   background-color: #0edceb;
@@ -407,17 +395,21 @@ h1 {
   margin-right: 0rem;
 }
 
-.stickyNav {
-  position: fixed;
-  top: 30rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  background-color: #0edceb;
+#desktopTitle {
+  display: none;
 }
 
-.stickyNav a {
+#xNav {
+  position: fixed;
+  top: 30rem;
+  width: 100%;
+  background-color: #0edceb;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#xNav a {
   list-style: none;
   padding: 1rem;
   background-color: #0edceb;
@@ -426,11 +418,36 @@ h1 {
   padding-right: 1.75rem;
 }
 
-#mobileImage {
-  border-bottom: 1rem solid #0edceb;
+#xNav h1 {
+  color: white;
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  padding-left: 4rem;
+  margin-top: .5rem;
 }
 
 main {
   margin-top: 5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  #yNav {
+    display: none;
+  }
+  #xNav {
+    top: 38rem;
+  }
+}
+
+@media only screen and (min-width: 980px) {
+  #xNav {
+    top: 0;
+  }
+  #desktopTitle {
+    display: inline;
+  }
+  .container {
+    display: none;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

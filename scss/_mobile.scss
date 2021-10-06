@@ -1,26 +1,4 @@
     $PrimaryColor: rgb(14, 220, 235);
-    //Overlay Text Settings
-    #louisville {
-        text-align: left;
-        padding-left: 1rem;
-    }
-    
-    #stunt {
-        position: absolute;
-        left: 9rem;
-    }
-    
-    #lot {
-        position: absolute;
-        left: 16rem;
-        top: 10rem;
-    }
-    
-    #textOverlay {
-        position: absolute;
-        top: 2rem;
-    }
-    
     //Nav Styling
     .bg-img {
         background-image: url("../images/mobile/mobile.jpg");
@@ -33,13 +11,17 @@
     }
     
     .container {
-        position: absolute;
-        margin: 20px;
-        width: auto;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    
+    .container h1 {
+        padding: 1rem;
     }
     
     //Actual link structure
-    .sideNav {
+    #yNav {
         position: fixed;
         top: 25.5rem;
         right: 0;
@@ -49,7 +31,7 @@
     }
     
     //Make the links pretty
-    .sideNav a {
+    #yNav a {
         list-style: none;
         padding: 1rem;
         background-color: $PrimaryColor;
@@ -59,16 +41,22 @@
         margin-right: 0rem;
     }
     
-    //Set the settings for the following Nav
-    .stickyNav {
-        position: fixed;
-        top: 30rem;
-        display: flex;
-        width: 100%;
-        background-color: $PrimaryColor;
+    //Desktop Items to be hidden
+    #desktopTitle {
+        display: none;
     }
     
-    .stickyNav a {
+    //Set the settings for the following Nav
+    #xNav {
+        position: fixed;
+        top: 30rem;
+        width: 100%;
+        background-color: $PrimaryColor;
+        // display: flex;
+        justify-content: space-evenly;
+    }
+    
+    #xNav a {
         list-style: none;
         padding: 1rem;
         background-color: $PrimaryColor;
@@ -77,11 +65,17 @@
         padding-right: 1.75rem;
     }
     
-    //Image Settings
-    #mobileImage {
-        border-bottom: 1rem solid $PrimaryColor;
+    #xNav h1 {
+        color: white;
+        flex-basis: 60%;
+        padding-left: 4rem;
+        margin-top: .5rem;
     }
     
+    //Image Settings
+    // #mobileImage {
+    //     border-bottom: 1rem solid $PrimaryColor;
+    // }
     //Main Content Settings
     main {
         margin-top: 5rem;

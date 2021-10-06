@@ -1,3 +1,13 @@
-@media only screen and (min-width: 980px) {}
+@media only screen and (min-width: 980px) {
+    #xNav {
+        top: 0;
+    }
+    #desktopTitle {
+        display: inline;
+    }
+    .container {
+        display: none;
+    }
+}
 
 ;

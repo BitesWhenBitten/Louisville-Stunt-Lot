@@ -1,3 +1,10 @@
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+    #yNav {
+        display: none;
+    }
+    #xNav {
+        top: 38rem;
+    }
+}
 
 ;

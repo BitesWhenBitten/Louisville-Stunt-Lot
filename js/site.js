@@ -9,7 +9,7 @@ function flexShow(element) {
 }
 //Horizontal Show/Hide Function
 function scrollHeightX() {
-    if (scrollY > 100) { //scrolled past the other div?
+    if (scrollY > 100 || window.innerWidth > 768) { //scrolled past the other div?- Inner Width is your Breakpoint!
         flexShow("xNav"); //reached the desired point -- show div
     } else {
         hide("xNav"); //else above the desired point -- hide div
@@ -19,7 +19,7 @@ function scrollHeightX() {
 
 //Vertical Show/Hide Function
 function scrollHeightY() {
-    if (scrollY < 100) { //scrolled past the other div?
+    if (scrollY < 100 && window.innerWidth <= 768) { //scrolled past the other div?- Inner Width is your Breakpoint!
         flexShow("yNav"); //reached the desired point -- show div
     } else {
         hide("yNav"); //else above the desired point -- hide div
@@ -27,8 +27,10 @@ function scrollHeightY() {
 
 };
 
-//Event Listeners
 
-// Dude, I tried absolutely everything except for this to be more... specific to the scroll position
+
+
+//End of Functions
+
 setInterval(scrollHeightY, 10);
 setInterval(scrollHeightX, 10);
