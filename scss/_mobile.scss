@@ -1,7 +1,13 @@
     $PrimaryColor: rgb(14, 220, 235);
+    //Body Settings 
+    body {
+        background-color: #4477a0;
+        color: white;
+    }
+    
     //Nav Styling
     .bg-img {
-        background-image: url("../images/mobile/mobile.jpg");
+        background-image: url("../images/mobile/mobile3.jpg");
         min-height: 600px;
         background-position: center;
         background-repeat: no-repeat;
@@ -72,11 +78,30 @@
         margin-top: .5rem;
     }
     
-    //Image Settings
-    // #mobileImage {
-    //     border-bottom: 1rem solid $PrimaryColor;
-    // }
     //Main Content Settings
     main {
         margin-top: 5rem;
+    }
+    
+    //SECTIONS
+    section {
+        a {
+            color: rgb(57, 241, 66);
+            font-style: italic;
+            font-weight: 600;
+            font-size: 1.25rem;
+        }
+        h2,
+        h3 {
+            text-decoration: underline;
+        }
+    }
+    
+    #rules a {
+        padding-right: 1rem;
+    }
+    
+    //FOOTER
+    footer {
+        text-align: center;
     }

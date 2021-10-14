@@ -1,12 +1,16 @@
 @media only screen and (min-width: 980px) {
     #xNav {
         top: 0;
+        padding: 0;
     }
     #desktopTitle {
         display: inline;
     }
     .container {
         display: none;
+    }
+    .bg-img {
+        top: 4.17rem;
     }
 }
 

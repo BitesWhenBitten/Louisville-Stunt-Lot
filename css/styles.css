@@ -346,8 +346,13 @@ h1 {
   font-family: 'Permanent Marker', cursive;
 }
 
+body {
+  background-color: #4477a0;
+  color: white;
+}
+
 .bg-img {
-  background-image: url("../images/mobile/mobile.jpg");
+  background-image: url("../images/mobile/mobile3.jpg");
   min-height: 600px;
   background-position: center;
   background-repeat: no-repeat;
@@ -430,6 +435,26 @@ main {
   margin-top: 5rem;
 }
 
+section a {
+  color: #39f142;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+section h2,
+section h3 {
+  text-decoration: underline;
+}
+
+#rules a {
+  padding-right: 1rem;
+}
+
+footer {
+  text-align: center;
+}
+
 @media only screen and (min-width: 768px) {
   #yNav {
     display: none;
@@ -437,17 +462,24 @@ main {
   #xNav {
     top: 38rem;
   }
+  .bg-img {
+    background-image: url("../images/desktop/desktop.jpg");
+  }
 }
 
 @media only screen and (min-width: 980px) {
   #xNav {
     top: 0;
+    padding: 0;
   }
   #desktopTitle {
     display: inline;
   }
   .container {
     display: none;
+  }
+  .bg-img {
+    top: 4.17rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
