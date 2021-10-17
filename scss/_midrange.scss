@@ -3,7 +3,25 @@
         display: none;
     }
     #xNav {
+        display: flex;
         top: 38rem;
+        position: fixed;
+        width: 100%;
+        background-color: $PrimaryColor;
+    }
+    #xNav a {
+        list-style: none;
+        padding: 1rem;
+        background-color: $PrimaryColor;
+        text-decoration: none;
+        color: white;
+        padding-right: 1.75rem;
+    }
+    #xNav h1 {
+        color: white;
+        flex-basis: 60%;
+        padding-left: 4rem;
+        margin-top: .5rem;
     }
     .bg-img {
         background-image: url("../images/desktop/desktop.jpg");

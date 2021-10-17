@@ -1,36 +1,41 @@
-//Set the functions
+//Mid-range sticky height
+//get navx
+navx = document.getElementById("xNav");
 
-function hide(element) {
-    document.getElementById(element).style.display = "none";
+//define the function
+function xNavHeight() {
+    if (window.innerWidth > 768 && window.innerWidth < 980) {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            navx.style.top = "10rem";
+        } else {
+            navx.style.top = "38rem";
+        }
+    }
 }
 
-function flexShow(element) {
-    document.getElementById(element).style.display = "flex";
+//Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+
+
+function scrollFunction() {
+
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+
 }
-//Horizontal Show/Hide Function
-function scrollHeightX() {
-    if (scrollY > 100 || window.innerWidth > 768) { //scrolled past the other div?- Inner Width is your Breakpoint!
-        flexShow("xNav"); //reached the desired point -- show div
-    } else {
-        hide("xNav"); //else above the desired point -- hide div
-    }
 
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+window.onscroll = function() {
+    scrollFunction();
+    xNavHeight();
 };
-
-//Vertical Show/Hide Function
-function scrollHeightY() {
-    if (scrollY < 100 && window.innerWidth <= 768) { //scrolled past the other div?- Inner Width is your Breakpoint!
-        flexShow("yNav"); //reached the desired point -- show div
-    } else {
-        hide("yNav"); //else above the desired point -- hide div
-    }
-
-};
-
-
-
-
-//End of Functions
-
-setInterval(scrollHeightY, 10);
-setInterval(scrollHeightX, 10);
