@@ -412,6 +412,31 @@ main {
   margin-top: 5rem;
 }
 
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.column {
+  -webkit-box-flex: 100%;
+      -ms-flex: 100%;
+          flex: 100%;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+}
+
+section {
+  border: solid 2px #0edceb;
+  padding: 1rem;
+}
+
 section a {
   color: #39f142;
   font-style: italic;
@@ -464,6 +489,17 @@ footer {
   /* Add a dark-grey background on hover */
 }
 
+#gear,
+#vehicle,
+#track,
+#spectators,
+#faq,
+#pricing,
+#rules,
+#about {
+  display: none;
+}
+
 @media only screen and (min-width: 768px) {
   #yNav {
     display: none;
@@ -494,6 +530,11 @@ footer {
   .bg-img {
     background-image: url("../images/desktop/desktop.jpg");
   }
+  .column {
+    -webkit-box-flex: 25%;
+        -ms-flex: 25%;
+            flex: 25%;
+  }
 }
 
 @media only screen and (min-width: 980px) {
@@ -514,6 +555,12 @@ footer {
     bottom: 0;
     border-radius: 1rem;
     font-size: 1rem;
+  }
+  .column {
+    -webkit-box-flex: 15%;
+        -ms-flex: 15%;
+            flex: 15%;
+    min-height: 6rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

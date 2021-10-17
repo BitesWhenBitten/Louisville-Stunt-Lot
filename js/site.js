@@ -42,3 +42,15 @@ window.onscroll = function() {
     scrollFunction();
     xNavHeight();
 };
+
+
+//Show Hide function and calling
+
+function sh(element) {
+
+    if (element.style.display === "none") {
+        element.style.display = "block";
+    } else {
+        element.style.display = "none";
+    }
+}
