@@ -1,8 +1,12 @@
-    $PrimaryColor: rgb(14, 220, 235);
+    $PrimaryColor: rgb(11, 104, 110);
     //Body Settings 
     body {
         background-color: #4477a0;
         color: white;
+    }
+    
+    h2:hover {
+        background-color: #000;
     }
     
     //Nav Styling
@@ -14,6 +18,9 @@
         background-size: cover;
         border: $PrimaryColor solid .5rem;
         position: relative;
+        h1 {
+            color: #000;
+        }
     }
     
     .container {
@@ -24,6 +31,7 @@
     
     .container h1 {
         padding: 1rem;
+        margin-top: 2rem;
     }
     
     //Actual link structure

@@ -351,14 +351,22 @@ body {
   color: white;
 }
 
+h2:hover {
+  background-color: #000;
+}
+
 .bg-img {
   background-image: url("../images/mobile/mobile3.jpg");
   min-height: 600px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border: #0edceb solid 0.5rem;
+  border: #0b686e solid 0.5rem;
   position: relative;
+}
+
+.bg-img h1 {
+  color: #000;
 }
 
 .container {
@@ -374,6 +382,7 @@ body {
 
 .container h1 {
   padding: 1rem;
+  margin-top: 2rem;
 }
 
 #yNav {
@@ -387,13 +396,13 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #0edceb;
+  background-color: #0b686e;
 }
 
 #yNav a {
   list-style: none;
   padding: 1rem;
-  background-color: #0edceb;
+  background-color: #0b686e;
   text-decoration: none;
   color: white;
   padding-right: 2rem;
@@ -433,7 +442,7 @@ main {
 }
 
 section {
-  border: solid 2px #0edceb;
+  border: solid 2px #0b686e;
   padding: 1rem;
 }
 
@@ -472,7 +481,7 @@ footer {
   /* Remove borders */
   outline: none;
   /* Remove outline */
-  background-color: #0edceb;
+  background-color: #0b686e;
   /* Set a background color */
   color: white;
   /* Text color */
@@ -510,12 +519,12 @@ footer {
     display: flex;
     position: fixed;
     width: 100%;
-    background-color: #0edceb;
+    background-color: #0b686e;
   }
   #xNav a {
     list-style: none;
     padding: 1rem;
-    background-color: #0edceb;
+    background-color: #0b686e;
     text-decoration: none;
     color: white;
     padding-right: 1.75rem;
@@ -529,6 +538,10 @@ footer {
   }
   .bg-img {
     background-image: url("../images/desktop/desktop.jpg");
+  }
+  .bg-img h1 {
+    margin-top: 30rem;
+    color: white;
   }
   .column {
     -webkit-box-flex: 25%;

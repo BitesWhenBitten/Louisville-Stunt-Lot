@@ -24,6 +24,10 @@
     }
     .bg-img {
         background-image: url("../images/desktop/desktop.jpg");
+        h1 {
+            margin-top: 30rem;
+            color: white;
+        }
     }
     .column {
         flex: 25%;
