@@ -5,7 +5,7 @@ navx = document.getElementById("xNav");
 //define the function
 function xNavHeight() {
     if (window.innerWidth > 768 && window.innerWidth < 980) {
-        if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
             navx.style.top = "0";
         } else {
             navx.style.top = "38rem";

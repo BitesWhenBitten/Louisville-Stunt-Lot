@@ -557,9 +557,9 @@ footer {
     font-size: 1rem;
   }
   .column {
-    -webkit-box-flex: 15%;
-        -ms-flex: 15%;
-            flex: 15%;
+    -webkit-box-flex: 25%;
+        -ms-flex: 25%;
+            flex: 25%;
     min-height: 6rem;
   }
 }
