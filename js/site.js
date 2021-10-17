@@ -5,11 +5,14 @@ navx = document.getElementById("xNav");
 //define the function
 function xNavHeight() {
     if (window.innerWidth > 768 && window.innerWidth < 980) {
-        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-            navx.style.top = "10rem";
+        if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+            navx.style.top = "0";
         } else {
             navx.style.top = "38rem";
         }
+
+    } else {
+        navx.style.top = "0";
     }
 }
 
@@ -21,7 +24,7 @@ mybutton = document.getElementById("myBtn");
 
 function scrollFunction() {
 
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
         mybutton.style.display = "block";
     } else {
         mybutton.style.display = "none";
