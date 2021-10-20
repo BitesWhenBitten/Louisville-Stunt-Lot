@@ -498,17 +498,6 @@ footer {
   /* Add a dark-grey background on hover */
 }
 
-#gear,
-#vehicle,
-#track,
-#spectators,
-#faq,
-#pricing,
-#rules,
-#about {
-  display: none;
-}
-
 @media only screen and (min-width: 768px) {
   #yNav {
     display: none;
