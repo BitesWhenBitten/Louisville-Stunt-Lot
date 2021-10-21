@@ -59,6 +59,9 @@ function setHideElements() {
 
 }
 
+function show(element) {
+    element.style.display = "block";
+}
 
 
 function sh(element) {
